@@ -1,0 +1,247 @@
+main {
+    display: block;
+    height: 100%;
+    width: calc(100% - 200px);
+    transition: all .3s;
+}
+
+main .main-content {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    justify-content: space-between;
+}
+
+.main-content .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.painel-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-50 {
+    width: 48%;
+}
+
+.painel-row button {
+    height: 180px;
+    background: rgb(0, 132, 255);
+    color: #ffffff;
+    font-size: 22px;
+    border: 0px !important;
+}
+
+.painel-row button i {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.painel-row button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+div#ajax-content {
+    width: 100%;
+    margin-top: 20px;
+}
+
+div#ajax-content button {
+    background: rgb(0, 98, 255);
+}
+
+div#ajax-content button:hover {
+    transform: scale(1.20);
+    transition: .2s;
+}
+
+div#ajax-content label {
+    font-size: 14px;
+}
+
+div.main-content-title {
+    padding: 5px 0;
+}
+
+div.main-content-title h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1;
+}
+
+/* Dashboard */
+
+
+.dashboard-flex-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-box {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.dashboard-content {
+    margin: 1em;
+    background-color: #ddd;
+}
+
+.dashboard-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #eee;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(57, 63, 66);
+}
+
+.dashboard-box:hover {
+    box-shadow: 0 0 2em rgba(0,0,0,.3);
+    transition: 0.4s;
+    transform: scale(1.08);
+}
+
+div.box-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    color: #088dda;
+    background: #caeaf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.box-icon i {
+    font-size: 18px;
+}
+
+div.value {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+div.type {
+    font-size: 14px;
+}
+
+div.box-value-percentual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+div.box-value-percentual i {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+    .dashboard-box {
+        padding-top: 20%;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .main-content-title {
+        text-align: center;
+    }
+    .dashboard-flex-parent {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .dashboard-box {
+        padding-top: 25%;
+        width: 300px;
+        margin: 20px;
+    }
+    div.box-value-percentual {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        
+        height: 100%;
+        background: #f4f4f4;
+        width: 100%;
+        position: relative;
+    }
+
+    .painel-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .panel-50 {
+        width: 100%;
+    }
+    
+    .painel-row button {
+        height: 180px;
+        background: rgb(0, 132, 255);
+        color: #ffffff;
+        font-size: 22px;
+        border: 0px !important;
+        width: 100% !important;
+    }
+    .painel-row button:hover {
+        transform: unset;
+    }
+
+    table {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    table th {
+        
+        font-weight: 400;
+    }
+    table td {
+        font-weight: 300;
+    }
+    .dynamic-content {
+        padding: 0;
+    }
+    .dynamic-content form {
+        padding: 20px;
+        background: #ffffff;
+    }
+}

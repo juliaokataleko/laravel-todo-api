@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    transition: .2s;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+td 
+{
+    height: 50px; 
+    width: 50px;
+}
+
+td 
+{
+    padding: 0.5em;
+    vertical-align: middle !important;
+}
+
+.table-responsive {
+    display: table;
+}
+
+table {
+    width:100%;
+    word-wrap:break-word;
+    white-space: nowrap;
+}
+
+
