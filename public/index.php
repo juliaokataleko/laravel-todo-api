@@ -41,27 +41,7 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-define('HOST', '127.0.0.1');
-define('USERNAME', env('DB_USERNAME'));
-define('PASSWORD', env('DB_PASSWORD'));
-define('DB', env('DB_DATABASE'));
 
-define('BASE_URL', env('APP_URL'));
-
-global $conn;
-global $conn1;
-
-if($conn = new mysqli(HOST, USERNAME, PASSWORD, DB)) {
-    // echo "<script>alert('yahhhhhhh..');</script>";
-} else {
-    echo "error";
-}
-
-try {
-    $conn1 = new PDO('mysql:host='.HOST.';dbname='.DB.';charset=utf8',USERNAME,PASSWORD);
-} catch(Exception $e) {
-    echo $e;
-}
 
 /*
 |--------------------------------------------------------------------------
